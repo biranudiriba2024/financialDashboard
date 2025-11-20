@@ -1,7 +1,7 @@
 import { logger } from "@/lib/lgger";
 import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_URI: string = process.env.MONGODB_URI as string;
 
 if (!MONGODB_URI) {
   console.log("Invalid/Missing environment variable", MONGODB_URI);
